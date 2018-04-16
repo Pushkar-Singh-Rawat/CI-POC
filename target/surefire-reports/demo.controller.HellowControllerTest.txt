@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: demo.controller.HellowControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.793 sec <<< FAILURE! - in demo.controller.HellowControllerTest
+getHome(demo.controller.HellowControllerTest)  Time elapsed: 0.189 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:664)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at demo.controller.HellowControllerTest.getHome(HellowControllerTest.java:36)
+
+getMessage(demo.controller.HellowControllerTest)  Time elapsed: 0.091 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:664)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at demo.controller.HellowControllerTest.getMessage(HellowControllerTest.java:44)
+
