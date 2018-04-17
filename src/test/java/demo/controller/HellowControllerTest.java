@@ -33,8 +33,7 @@ public class HellowControllerTest {
     public void getHome() throws Exception {
         this.mockMvc.perform(get("/hello"))
                 .andDo(print())
-                .andExpect(status().isOk())
-                .andExpect(forwardedUrl("hello.html"));;
+                .andExpect(status().isOk());
     }
 
     @Test
