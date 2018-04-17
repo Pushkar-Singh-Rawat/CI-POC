@@ -28,6 +28,15 @@ public class HellowControllerTest {
     public void setup() {
         this.mockMvc = MockMvcBuilders.webAppContextSetup(this.wac).build();
     }
+
+    @Test
+    public void getHome() throws Exception {
+        this.mockMvc.perform(get("/hello"))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(forwardedUrl("hello.html"));;
+    }
+
     @Test
     public void getMessage() throws Exception {
         this.mockMvc.perform(get("/hello"))
