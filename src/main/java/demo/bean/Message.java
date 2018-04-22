@@ -10,7 +10,7 @@ public class Message {
     private String msg;
     
     public String get() {
-		System.out.println("component bean");
+		
         return msg;
     }
 }
