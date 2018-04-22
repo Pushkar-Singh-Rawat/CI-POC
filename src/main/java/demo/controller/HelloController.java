@@ -15,7 +15,6 @@ public class HelloController {
     @GetMapping(path = "/hello")
     @ResponseBody
     public String message() {
-
         return message.get();
     }
 }
