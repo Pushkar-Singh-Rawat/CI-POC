@@ -10,6 +10,7 @@ public class Message {
     private String msg;
     
     public String get() {
+    	
         return msg;
     }
 }

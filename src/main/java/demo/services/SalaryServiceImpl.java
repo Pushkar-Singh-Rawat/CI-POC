@@ -14,7 +14,8 @@ public class SalaryServiceImpl implements SalaryService {
 	String day;
 	String presentDate;
 
-	String username = System.getProperty("user.name");
+	String username = ""/*System.getProperty("user.name")*/;
+	
 	@Override
 	public String showSalaryMessage() {
 		// TODO Auto-generated method stub
@@ -23,7 +24,7 @@ public class SalaryServiceImpl implements SalaryService {
 		day= date.toString().split("-")[2];
 		presentDate=date.toString();
 		
-		return "Hello! "+username+" today is "+date+"." +"You have "+calculateDaysToGetSalary()+" remaning days to get salary";
+		return "Today is "+date+"." +"You have "+calculateDaysToGetSalary()+" days remaining to get salary.";
 				
 	}
 
@@ -49,6 +50,13 @@ public class SalaryServiceImpl implements SalaryService {
 		int lastDay=Integer.valueOf(sdf.format(lastDayOfMonth).toString().split("-")[2]);
 		int remainingDays=lastDay-presentDay;
 		return String.valueOf(remainingDays);
+	}
+
+	@Override
+	public String displayUserName() {
+		// TODO Auto-generated method stub
+		
+		return null;
 	}
 	
 }

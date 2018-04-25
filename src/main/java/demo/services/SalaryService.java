@@ -4,4 +4,5 @@ public interface SalaryService {
 
 	String showSalaryMessage();
 	String calculateDaysToGetSalary();
+	String displayUserName();
 }
