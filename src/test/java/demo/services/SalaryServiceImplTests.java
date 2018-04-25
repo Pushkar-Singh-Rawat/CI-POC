@@ -45,7 +45,7 @@ public class SalaryServiceImplTests {
 		int presentDay=Integer.valueOf(day);
 		int lastDay=Integer.valueOf(sdf.format(lastDayOfMonth).toString().split("-")[2]);
 		int remainingDays=lastDay-presentDay;
-		String expectedMessage="Today is "+date+"." +"You have "+salaryServiceImpl.calculateDaysToGetSalary()+" days remaining to get salary.";
+		String expectedMessage="Today is "+date+"." +"You have "+remainingDays+" days remaining to get salary.";
 		assertEquals(expectedMessage, salaryServiceImpl.showSalaryMessage());
 	}
 	
