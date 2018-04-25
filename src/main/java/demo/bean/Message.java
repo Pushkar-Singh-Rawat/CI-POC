@@ -10,7 +10,11 @@ public class Message {
     private String msg;
     
     public String get() {
+<<<<<<< HEAD
     	
+=======
+		
+>>>>>>> 6f616950734598f833138b231271dbae44986c91
         return msg;
     }
 }

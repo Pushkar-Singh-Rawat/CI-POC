@@ -26,11 +26,9 @@ public class HelloController {
 	}
     @Autowired
     private Message message;
-
     @GetMapping(path = "/hello")
     @ResponseBody
     public String message() {
-
         return message.get();
     }
     
