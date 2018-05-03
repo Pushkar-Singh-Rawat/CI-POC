@@ -23,7 +23,7 @@ public class SalaryServiceImpl implements SalaryService {
 		date = new Date(millis);
 		day = date.toString().split("-")[2];
 		if (calculateDaysToGetSalary().equalsIgnoreCase("0")) {
-			return "Today is " + date + "." + " Happy Salary Day!";
+			return "Happy Salary Day!";
 		} else {
 			return "Today is " + date + "." + "You have " + calculateDaysToGetSalary()
 					+ " days remaining to get salary.";

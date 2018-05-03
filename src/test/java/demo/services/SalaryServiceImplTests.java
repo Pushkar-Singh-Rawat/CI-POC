@@ -49,7 +49,7 @@ public class SalaryServiceImplTests {
 		String expectedMessage = "Today is " + date + "." + "You have " + remainingDays
 				+ " days remaining to get salary.";
 		if (remainingDays == 0) {
-			assertEquals("Today is " + date + "." + " Happy Salary Day!", salaryServiceImpl.showSalaryMessage());
+			assertEquals("Happy Salary Day!", salaryServiceImpl.showSalaryMessage());
 		} else {
 			assertEquals(expectedMessage, salaryServiceImpl.showSalaryMessage());
 		}
